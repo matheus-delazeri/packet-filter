@@ -146,7 +146,7 @@ def forward_packet(pkt, filter):
 def main():
     parser = argparse.ArgumentParser(description="Router Configuration")
     parser.add_argument("--node", type=str, required=True, help="Name of the node to be used as router. e.g: r1")
-    parser.add_argument("--filter", type=str, choices=['bad_word'], default='bad_word', required=False, help="Filter to be applied for packet's forwarding. e.g: 'bad_word' will replace all badwords found in a payload.")
+    parser.add_argument("--filter", type=str, choices=['bad_word'], required=False, help="Filter to be applied for packet's forwarding. e.g: 'bad_word' will replace all badwords found in a payload.")
     parser.add_argument("--bad_word_file", type=str, required=False, help="File (txt) containing the bad words to filter.")
     args = parser.parse_args()
 
