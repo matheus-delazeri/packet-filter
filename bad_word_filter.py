@@ -39,7 +39,11 @@ class PacketFilter:
         return [
             'badword', 'offensive', 'inappropriate', 
             'vulgar', 'profane', 'racist', 
-            'sexist', 'hate', 'discriminate'
+            'sexist', 'hate', 'discriminate', 'porra',
+            'puta', 'caralho', 'merda', 'amaldicoado',
+            'fi da besta fera', 'fi do satanas', 'sete pele',
+            'desgraca', 'pau no cu', 'canalha', 'xambao', 'jaguara',
+            'fi do cabrunco'
         ]
 
     def filter_packet(self, packet):
